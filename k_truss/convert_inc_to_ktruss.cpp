@@ -2,8 +2,10 @@
 #include <fstream>
 #include <string>
 using namespace std;
-int main() {
-    std::string file_path = "..\\data\\amazon0302_inc.tsv";
+int main(int argc, char* argv[]) 
+{
+    string infile = argv[1];
+    std::string file_path = "..\\data\\" + infile;
     std::ifstream file(file_path);  // Mở file để đọc
 
     if (file.is_open()) {
