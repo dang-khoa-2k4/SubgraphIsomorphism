@@ -1,4 +1,7 @@
-
+/*   File này là tổng hợp các thuật toán để tính số tam giác trong đồ thị. 
+ *   Thuật toán chính được nêu trong báo cáo là hàm 
+ *   int numsOfTriangle3(unordered_map<int, vector<int>> adjList, set<vector<int>> edgeList, const char * outFile, vector<int>& triangleOfVertex)
+ */
 #include<algorithm>
 #include<iostream>
 #include<fstream>
@@ -239,7 +242,7 @@ int numsOfTriangle2(vector<vector<int>> adjMatrix, vector<vector<int>> incMatrix
 
 }
 
-
+// chính là hàm này
 int numsOfTriangle3(unordered_map<int, vector<int>> adjList, set<vector<int>> edgeList, const char * outFile, vector<int>& triangleOfVertex)
 {   
     ofstream output(outFile);
